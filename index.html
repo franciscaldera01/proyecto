@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interfaz</title>
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/interfaz.css" 
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu principal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar">Mas informacion</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Opciones
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#"></a>Otras opciones</li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Correo electronico</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="ingrese correo" placeholder="ingrese correo" aria-label="ingrese correo">
+            <button class="btn btn-outline-success" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-5 bg-white">
+                <h2>Formulario de Denuncias</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Ingrese la Denuncia</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Denuncia" autofocus>
+                      </div>
+                      <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripcion</label>
+                        <textarea class="form-control" id="descripcion" placeholder="Descripcion de la Denuncia" rows="3"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="denuncias" class="form-label">Numero</label>
+                        <input type="number" class="form-control" id="denuncias" />
+                      </div>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-light">Guardar</button>
+                        <button class="btn">Limpiar</button>
+                      </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-5 bg-white" >
+                <h2>Listado de Denuncias</h2>
+                <table class="table table-light table-striped">
+                    <thead>
+                      <tr>
+                        <th class="centrado">#</th>
+                        <th class="centrado">Denuncias</th>
+                        <th class="centrado">Cantidad de Denuncias</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td class="centrado">1</td>
+                            <td class="centrado">Denuncia</td>
+                            <td class="centrado">21</td>
+                          </tr>
+                          <tr>
+                            <td class="centrado">2</td>
+                            <td class="centrado">Denuncia</td>
+                            <td class="centrado">110</td>
+                          </tr>
+                          <tr>
+                            <td class="centrado">3</td>
+                            <td class="centrado">Denuncia</td>
+                            <td class="centrado">45</td>
+                          </tr>
+                          <tr>
+                            <td class="centrado">4</td>
+                            <td class="centrado">Denuncia</td>
+                            <td class="centrado">31</td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
